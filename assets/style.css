@@ -8,11 +8,15 @@ header {
   background-image: url(imagens/fundoHeader.jpg);
 }
 
+body {
+  background-image: url(imagens/fundoBody.jpg);
+}
+
 .logo {
   display: flex;
   align-items: center;
   padding: 5px 0px;
-  justify-content: center;
+  justify-content: flex-start;
   background-color: #c4bebb;
 }
 
@@ -26,17 +30,16 @@ h1 {
 
 .navHeader {
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 }
 .navHeader li {
   display: inline-block;
   border: solid black 2px;
-  background-color: rgb(73, 71, 134);
-  padding: 2px;
-  margin-left: 2px;
+  background-color: #666CD9;
+  padding: 6px 11px;
 }
 .navHeader li a:link {
-  color: black;
+  color: rgb(132, 208, 125);
 }
 .navHeader li a:visited {
   color: rgb(132, 208, 125);
@@ -44,16 +47,19 @@ h1 {
 
 main {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-end;
 }
 
 .bemVindo {
-  width: 700px;
-  border: solid black 2px;
-  margin-top: 5px;
-  background-color: #9a2257;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70vw;
+  height: 15vh;
+  border: solid #4E52A6 5px;
+  border-radius: 50px;
+  margin: 5px;
+  background-color: #666CD9;
 }
 .bemVindo h2 {
   text-align: center;
@@ -64,18 +70,63 @@ main {
   text-align: center;
 }
 
-/*.top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.reviewsRecentes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70vw;
+  margin: 5px;
+  background-color: #666CD9;
+  border: solid #4E52A6 5px;
+  border-radius: 50px;
+}
+.reviewsRecentes h2 {
+  font-size: 30px;
+}
+.reviewsRecentes article {
+  display: flex;
+  align-items: center;
+  border: solid #4E52A6 5px;
+  border-radius: 50px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #989999;
+}
+.reviewsRecentes div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45vw;
+}
+.reviewsRecentes img {
+  width: 10vw;
+}
+.reviewsRecentes .capaJogo {
+  margin-right: 5px;
+  width: 20vw;
+  border-radius: 50px;
+}
+.reviewsRecentes p {
+  text-align: center;
+}
 
-    li {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    img {
-        width: 200px;
-    }
-}*//*# sourceMappingURL=style.css.map */
+.top10 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  background-color: #666CD9;
+  border: solid #4E52A6 5px;
+  border-radius: 50px;
+  margin: 5px;
+}
+.top10 h2 {
+  font-size: 25px;
+}
+.top10 p {
+  text-align: center;
+}
+.top10 img {
+  width: 15vw;
+}/*# sourceMappingURL=style.css.map */
